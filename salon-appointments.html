@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Salon Appointments</title>
+<link rel="stylesheet" href="assets/css/shared.css"></head><body>
+<div class="layout">
+<div class="sidebar"><h2>💇 Salon</h2><ul>
+<li><a href="salon.html">🏠 Dashboard</a></li>
+<li><a href="salon-profile.html">🏪 Profile</a></li>
+<li><a href="manage-services.html">💇 Services</a></li>
+<li><a href="manage-barbers.html">✂️ Barbers</a></li>
+<li><a href="salon-appointments.html" class="active">📅 Appointments</a></li>
+<li onclick="logout()">🚪 Logout</li></ul></div>
+<div class="content"><h2>Appointments</h2>
+<table><thead><tr><th>Customer</th><th>Service</th><th>Barber</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr></thead>
+<tbody id="appointmentTable"></tbody></table>
+</div></div>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/salon-appointments.js"></script></body></html>

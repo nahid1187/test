@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+<link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+<header><h2>✨ Admin Dashboard</h2>
+<div>
+<span>Users: <strong id="statUsers">0</strong></span> &nbsp;
+<span>Salons: <strong id="statSalons">0</strong></span> &nbsp;
+<span>Appointments: <strong id="statAppts">0</strong></span> &nbsp;
+<button onclick="logout()">Logout</button>
+</div></header>
+<div class="container">
+<div class="cards">
+<div class="card" onclick="showUsers()">👤 Users</div>
+<div class="card" onclick="showSalons()">🏪 Salons</div>
+<div class="card" onclick="showAppointments()">📅 Appointments</div>
+</div>
+<div id="dataArea"><p style="color:#fff;text-align:center">Click a card above to view data</p></div>
+</div>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/admin.js"></script></body></html>

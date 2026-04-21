@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+    <title>Salon Profile</title>
+<link rel="stylesheet" href="assets/css/shared.css">
+</head>
+<body>
+<div class="layout">
+<div class="sidebar"><h2>💇 Salon</h2><ul>
+<li><a href="salon.html">🏠 Dashboard</a></li>
+<li><a href="salon-profile.html" class="active">🏪 Profile</a></li>
+<li><a href="manage-services.html">💇 Services</a></li>
+<li><a href="manage-barbers.html">✂️ Barbers</a></li>
+<li><a href="salon-appointments.html">📅 Appointments</a></li>
+<li onclick="logout()">🚪 Logout</li></ul></div>
+<div class="content"><div class="card-box" style="max-width:500px">
+<h2 id="displayName">My Salon</h2><p>Manage your salon info</p><br>
+<div id="msg"></div>
+<label>Salon Name</label><input id="salonName" type="text" placeholder="Salon Name" style="margin-bottom:12px">
+<label>Location</label><input id="location" type="text" placeholder="Location" style="margin-bottom:12px">
+<button onclick="saveProfile()">Save Changes</button>
+</div>
+</div>
+</div>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/salon-profile.js"></script>
+</body>
+</html>

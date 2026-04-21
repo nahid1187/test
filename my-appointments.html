@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+    <title>My Appointments</title>
+
+<link rel="stylesheet" href="assets/css/shared.css">
+</head>
+<body>
+<div class="layout">
+<div class="sidebar"><h2>👤 Customer</h2><ul>
+<li><a href="customer.html">🏠 Dashboard</a></li>
+<li><a href="book.html">📅 Book Appointment</a></li>
+<li><a href="my-appointments.html" class="active">📋 My Bookings</a></li>
+<li onclick="logout()">🚪 Logout</li></ul></div>
+<div class="content"><h2>My Appointments</h2>
+<table><thead><tr><th>Salon</th><th>Service</th><th>Barber</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr></thead>
+<tbody id="appointmentTable"></tbody></table>
+</div>
+</div>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/my-appointments.js"></script>
+</body>
+</html>

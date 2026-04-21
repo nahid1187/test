@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+    <title>Manage Services</title>
+
+<link rel="stylesheet" href="assets/css/shared.css"></head><body>
+<div class="layout">
+<div class="sidebar"><h2>💇 Salon</h2><ul>
+<li><a href="salon.html">🏠 Dashboard</a></li>
+<li><a href="salon-profile.html">🏪 Profile</a></li>
+<li><a href="manage-services.html" class="active">💇 Services</a></li>
+<li><a href="manage-barbers.html">✂️ Barbers</a></li>
+<li><a href="salon-appointments.html">📅 Appointments</a></li>
+<li onclick="logout()">🚪 Logout</li></ul></div>
+<div class="content"><h2>Manage Services</h2>
+<div id="msg"></div>
+<div class="form-row">
+<input id="serviceName" type="text" placeholder="Service Name">
+<input id="servicePrice" type="number" placeholder="Price">
+<button onclick="addService()">Add</button></div>
+<div id="serviceList"></div>
+</div>
+</div>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/manage-services.js"></script>
+</body>
+</html>
